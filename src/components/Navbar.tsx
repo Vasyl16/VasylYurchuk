@@ -7,7 +7,7 @@ import { logo, menu, close } from '../assets';
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState('');
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <nav
