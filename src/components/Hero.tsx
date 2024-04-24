@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from '.';
+import ComputersCanvas from './canvas/Computers';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full z-50 h-screen mx-auto">
+    <section className="relative w-full z-5 h-screen mx-auto">
       <div
-        className={`${styles.padding} absolute max-w-7xl inset-0 top-[120px] mx-auto flex flex-row items-start gap-5 `}
+        className={`${styles.paddingX} absolute max-w-7xl inset-0 top-[120px] mx-auto flex flex-row items-start gap-5 `}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
