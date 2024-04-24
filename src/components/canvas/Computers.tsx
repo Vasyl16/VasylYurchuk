@@ -13,9 +13,9 @@ const Computers: React.FC = () => {
       <hemisphereLight intensity={5} groundColor="black" />
       <pointLight intensity={2} position={[0, 0, 0]} />
       <primitive
-        scale={0.75}
+        scale={0.7}
         object={scene}
-        position={[0, -3.25, -1.5]}
+        position={[-0, -3.0, -1.5]}
         rotation={[-0.01, -0.2, -0.05]}
       />
     </mesh>
