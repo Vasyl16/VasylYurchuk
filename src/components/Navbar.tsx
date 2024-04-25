@@ -39,14 +39,7 @@ const Navbar: React.FC = () => {
                 setActive(link.title);
               }}
             >
-              <a
-                href={`#${link.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                {link.title}
-              </a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
