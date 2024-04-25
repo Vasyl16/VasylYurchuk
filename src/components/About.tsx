@@ -37,7 +37,7 @@ const ServiceCard: React.FC<ServiceCardPorps> = ({ title, icon, index }) => {
 
 const About: React.FC = () => {
   return (
-    <div className={`${styles.paddingX} max-w-7xl  mx-auto`}>
+    <>
       <motion.div variants={textVariant(0.5)}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -57,7 +57,7 @@ const About: React.FC = () => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}
       </div>
-    </div>
+    </>
   );
 };
 
