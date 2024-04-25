@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
 import { services } from '../constants/constants';
+import { SectionWrapper } from '../hoc';
 
 type ServiceCardPorps = {
   title: string;
@@ -60,4 +61,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, 'about');
