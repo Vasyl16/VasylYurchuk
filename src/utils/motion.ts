@@ -64,8 +64,8 @@ export const zoomIn = (delay: string, duration: string) => {
 export const slideIn = (
   direction: string,
   type: string,
-  delay: string,
-  duration: string
+  delay: number,
+  duration: number
 ) => {
   return {
     hidden: {
@@ -86,8 +86,8 @@ export const slideIn = (
 };
 
 export const staggerContainer = (
-  staggerChildren: string,
-  delayChildren: string
+  staggerChildren: number,
+  delayChildren: number
 ) => {
   return {
     hidden: {},
