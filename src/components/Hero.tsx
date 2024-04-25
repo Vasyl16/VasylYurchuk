@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       </div>
       <ComputersCanvas />
       <div className="absolute xs:bottom-10  bottom-32 w-full flex justify-center items-center">
-        <a href="#abuot">
+        <a href="#about">
           <div className="w-[35px] h-[64px] border-secondary rounded-3xl border-4 flex justify-center items-start p-2 ">
             <motion.div
               animate={{ y: [0, 25, 0] }}
