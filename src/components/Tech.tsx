@@ -11,7 +11,7 @@ const Tech: React.FC = () => {
       {technologies.map((technology) => {
         return (
           <div className="w-28 , h-28 " key={technology.name}>
-            <BallCanvas />
+            <BallCanvas icon={technology.icon} />
           </div>
         );
       })}
