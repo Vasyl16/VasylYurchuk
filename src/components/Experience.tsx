@@ -88,4 +88,4 @@ const Experience: React.FC = () => {
   );
 };
 
-export default SectionWrapper(Experience, 'work');
+export default SectionWrapper(Experience, 'experience');
