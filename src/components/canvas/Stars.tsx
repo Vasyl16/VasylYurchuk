@@ -9,7 +9,7 @@ import { Loader, PointMaterial, Points, Preload } from '@react-three/drei';
 const Stars: React.FC = () => {
   const ref = useRef(null);
 
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+  const sphere = random.inSphere(new Float32Array(5001), { radius: 1.2 });
 
   const spherePositions = new Float32Array(sphere);
 
