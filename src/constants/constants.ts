@@ -19,10 +19,11 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  pizzaapp,
+  clotheapp,
+  jediapp,
   threejs,
+  vanilaworkapp,
 } from '../assets/index';
 
 export const navLinks = [
@@ -198,9 +199,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'React Pizza App',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A web application that allows users to to view(from api) buy pizza(only front). In this application, you can filter and sort pizzas, add them to the cart and the data will be saved',
     tags: [
       {
         name: 'react',
@@ -211,36 +212,93 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'css',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'redux',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: ' green-blue-text-gradient',
+      },
+      {
+        name: 'git',
+        color: 'pink-purple-text-gradient',
+      },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: pizzaapp,
+    source_code_link: 'https://vasyl16.github.io/ReactPizzaApp/',
   },
   {
-    name: 'Job IT',
+    name: 'React Jedi App',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'A web application that allows the user to view(from api) information about a lot of Star Wars characters by searching or viewing all, you can also choose a theme and add your favorite characters to the save cart.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'mongodb',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'css',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'redux',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: ' green-blue-text-gradient',
+      },
+      {
+        name: 'git',
+        color: 'pink-purple-text-gradient',
+      },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: jediapp,
+    source_code_link: 'https://vasyl16.github.io/ReactApp/',
   },
   {
-    name: 'Trip Guide',
+    name: 'React Clothes App',
+    description:
+      'Other interesting works written in vanilla js language such as landing page, card website ... ',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'redux',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: ' green-blue-text-gradient',
+      },
+      {
+        name: 'git',
+        color: 'pink-purple-text-gradient',
+      },
+    ],
+    image: clotheapp,
+    source_code_link: 'https://vasyl16.github.io/ReactCartApp/',
+  },
+  {
+    name: 'Vanila JS Apps',
     description:
       'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
@@ -257,9 +315,18 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: vanilaworkapp,
+    source_code_link: 'https://vasyl16.github.io/Allmywork/',
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const my_github_link = 'https://github.com/Vasyl16';
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  my_github_link,
+};
