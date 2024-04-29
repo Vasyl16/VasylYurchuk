@@ -18,7 +18,9 @@ const Hero: React.FC = () => {
             Hi , I'm <span className="text-[#915eff]">Vasyl</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            My descriptiion <br className="sm:block hidden" />
+            I develop React visuals,user <br className="sm:block hidden" />
+            interfaces and web aplications
+            <br className="sm:block hidden" />
           </p>
         </div>
       </div>
