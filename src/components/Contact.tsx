@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
-import { SectionWrapper } from '../hoc';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+
+import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { styles } from '../styles';
 import { EarthCanvas } from '.';
@@ -16,9 +18,46 @@ const Contact: React.FC = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {};
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        'service_25o85r6',
+        'template_4rpl5lo',
+        {
+          from_name: form.name,
+          to_name: 'Vasyl',
+          from_email: form.email,
+          to_email: 'mira07081984@gmail.com',
+          message: form.message,
+        },
+        'w54eUUZdxaaQCDhXA'
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert('Thank you. I will back to you as soon as possible.');
+          setForm({
+            name: '',
+            email: '',
+            message: '',
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert('Something went');
+        }
+      );
+  };
 
-  const handleChange = (e) => {};
+  const handleChange: React.ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden ">
@@ -36,17 +75,19 @@ const Contact: React.FC = () => {
           <label className="flex flex-col">
             <span className="mb-4 text-white font-medium">Your Name</span>
             <input
+              required
               type="text"
-              name=""
+              name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="What is your name"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium "
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none  font-medium "
             />
           </label>
           <label className="flex flex-col">
             <span className="mb-4 text-white font-medium">Your Email</span>
             <input
+              required
               type="email"
               name="email"
               value={form.email}
@@ -58,6 +99,7 @@ const Contact: React.FC = () => {
           <label className="flex flex-col">
             <span className="mb-4 text-white font-medium">Your Message</span>
             <textarea
+              required
               rows={7}
               name="message"
               value={form.message}
