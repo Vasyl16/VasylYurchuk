@@ -10,11 +10,9 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
+  githubLogo,
   figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -22,7 +20,6 @@ import {
   pizzaapp,
   clotheapp,
   jediapp,
-  threejs,
   vanilaworkapp,
 } from '../assets/index';
 
@@ -90,28 +87,17 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
     name: 'git',
     icon: git,
   },
   {
+    name: 'github',
+    icon: githubLogo,
+  },
+
+  {
     name: 'figma',
     icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
   },
 ];
 
