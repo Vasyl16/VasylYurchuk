@@ -46,11 +46,11 @@ const About: React.FC = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn('', '', 0.1, 1)}
       >
-        My overview My overview My overview My overview My overview My overview
-        My overview My overview My overview My overview My overview My overview
-        My overview My overview My overview My overview My overview My overview
-        My overview My overview My overview My overview My overview My overview
-        My overview
+        I'm dedicated Web Developer specializing in React and TypeScript. I
+        focus on building responsive and maintainable web applications that
+        deliver seamless user experiences. With a strong background in modern
+        front-end technologies, I thrive on turning complex challenges into
+        intuitive solutions.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => {
