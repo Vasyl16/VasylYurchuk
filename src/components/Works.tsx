@@ -5,7 +5,7 @@ import { Tilt } from 'react-tilt';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { styles } from '../styles';
-import { projects } from '../constants/constants';
+import { my_github_link, projects } from '../constants/constants';
 import { github } from '../assets';
 
 type ProjectCardProps = {
@@ -29,7 +29,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5 + 0.5, 0.7)}>
+    <motion.div
+      className="cursor-pointer"
+      onClick={() => {
+        window.open(source_code_link, '_blank');
+      }}
+      variants={fadeIn('up', 'spring', index * 0.5 + 0.5, 0.7)}
+    >
       <Tilt
         options={{
           max: 25,
@@ -45,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="absolute flex justify-end inset-0 m-3 card-img_hover ">
             <div
               onClick={() => {
-                window.open(source_code_link, '_blank');
+                window.open(my_github_link, '_blank');
               }}
               className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer"
             >

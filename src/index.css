@@ -114,6 +114,28 @@
   -webkit-text-fill-color: transparent;
 }
 
+.pink-purple-text-gradient {
+  background: rgb(190, 52, 244);
+  background: linear-gradient(
+    90deg,
+    rgba(190, 52, 244, 1) 0%,
+    rgba(244, 79, 204, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-blue-text-gradient {
+  background: rgb(140, 244, 52);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 244, 52, 1) 0%,
+    rgba(79, 182, 244, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
