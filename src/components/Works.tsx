@@ -84,7 +84,7 @@ const Works: React.FC = () => {
     <>
       <motion.div variants={textVariant(0.5)}>
         <p className={styles.sectionSubText}>My projects</p>
-        <h2 className={styles.sectionHeadText}>Studying Experience</h2>
+        <h2 className={styles.sectionHeadText}>Studying Project Experience</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
@@ -92,10 +92,9 @@ const Works: React.FC = () => {
           className="
         mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] "
         >
-          My project My project My project My project My project My project My
-          project My project My project My project My project My project My
-          project My project My project My project My project My project My
-          project My project My project My project My project
+          Here are examples of my work, each described with links to the code
+          and live demos. They showcase my skills in solving complex issues,
+          using various technologies, and managing projects effectively.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
