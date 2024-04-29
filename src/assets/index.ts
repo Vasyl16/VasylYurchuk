@@ -11,6 +11,7 @@ import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
 import git from './tech/git.png';
+import githubLogo from './tech/github-mark.svg';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
 import mongodb from './tech/mongodb.png';
@@ -44,6 +45,7 @@ export {
   docker,
   figma,
   git,
+  githubLogo,
   html,
   javascript,
   mongodb,
