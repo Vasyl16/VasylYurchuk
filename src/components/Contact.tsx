@@ -114,6 +114,13 @@ const Contact: React.FC = () => {
           >
             {loading ? 'sending' : 'send'}
           </button>
+
+          <p className="mt-1 text-secondary">
+            Or email me directly at{' '}
+            <a className="text-white" href="mailto:mira07081984@gmail.com">
+              mira07081984@gmail.com 😊
+            </a>
+          </p>
         </form>
       </motion.div>
       <motion.div

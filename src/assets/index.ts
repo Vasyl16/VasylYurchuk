@@ -21,6 +21,8 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import nestjs from './tech/icons8-nestjs-logo-48.png';
+import nextjs from './tech/icons8-next.js-64.png';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
@@ -28,6 +30,7 @@ import starbucks from './company/starbucks.png';
 import tesla from './company/tesla.png';
 
 import pizzaapp from './pizzaapp.png';
+import nextExam from './nextExam.png';
 import clotheapp from './clotheapp.png';
 import jediapp from './jediapp.png';
 import vanilaworkapp from './vanilaworkapp.png';
@@ -63,4 +66,7 @@ export {
   clotheapp,
   jediapp,
   vanilaworkapp,
+  nestjs,
+  nextjs,
+  nextExam,
 };

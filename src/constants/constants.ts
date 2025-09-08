@@ -21,6 +21,11 @@ import {
   clotheapp,
   jediapp,
   vanilaworkapp,
+  nodejs,
+  nextjs,
+  nestjs,
+  docker,
+  nextExam,
 } from '../assets/index';
 
 export const navLinks = [
@@ -40,7 +45,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'Full Stack Developer',
     icon: web,
   },
   {
@@ -48,7 +53,7 @@ const services = [
     icon: backend,
   },
   {
-    title: 'Vanila JS Developer',
+    title: 'Node.js Developer',
     icon: mobile,
   },
   {
@@ -69,6 +74,18 @@ const technologies = [
   {
     name: 'JavaScript',
     icon: javascript,
+  },
+  {
+    name: 'Nest.js',
+    icon: nestjs,
+  },
+  {
+    name: 'Next.js',
+    icon: nextjs,
+  },
+  {
+    name: 'Docker',
+    icon: docker,
   },
   {
     name: 'TypeScript',
@@ -103,7 +120,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'HTML,CSS,JS and Git Developer',
+    title: 'HTML,CSS,JS and Git',
     company_name: 'Starbucks',
     icon: html,
     iconBg: '#383E56',
@@ -126,19 +143,49 @@ const experiences = [
       'Developing  websites.',
     ],
   },
-  // {
-  //   title: 'Web Developer',
-  //   company_name: 'Shopify',
-  //   icon: shopify,
-  //   iconBg: '#383E56',
-  //   date: 'Jan 2022 - Jan 2023',
-  //   points: [
-  //     'Developing and maintaining web applications using React.js and other related technologies.',
-  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-  //     'Implementing responsive design and ensuring cross-browser compatibility.',
-  //     'Participating in code reviews and providing constructive feedback to other developers.',
-  //   ],
-  // },
+  {
+    title: 'Web ',
+    company_name: 'Node.js',
+    icon: nodejs,
+    iconBg: '#383E56',
+    date: 'April 2024  - March 2025',
+    points: [
+      'Developing and maintaining backend applications using Node.js to build scalable server-side logic.',
+      'Designing and integrating RESTful APIs to support dynamic frontend applications.',
+      'Working with databases (SQL and NoSQL) and managing queries, migrations, and performance optimization.',
+      'Implementing authentication, authorization, and security best practices in Node.js applications.',
+      'Optimizing backend performance with asynchronous programming and event-driven architecture.',
+    ],
+  },
+  {
+    title: 'Next.js ',
+    company_name: 'Node.js',
+    icon: nextjs,
+    iconBg: '#383E56',
+    date: 'April 2024  - August 2025',
+    points: [
+      'Building modern web applications with Next.js using server-side rendering (SSR) and static site generation (SSG).',
+      'Developing full-stack features with API routes in Next.js to connect frontend and backend seamlessly.',
+      'Implementing responsive, SEO-friendly, and high-performance UIs with React and Next.js.',
+      'Integrating external APIs, services, and databases in Next.js projects.',
+      'Deploying and optimizing applications on platforms like Vercel for scalability and performance.',
+    ],
+  },
+  {
+    title: 'Nest.js ',
+    company_name: 'August 2025 - September 2025',
+    icon: nestjs,
+    iconBg: '#E6DEDD',
+    date: 'April 2024  - March 2025',
+    points: [
+      'Building structured, modular, and scalable backend applications using NestJS framework.',
+      'Designing and implementing RESTful and GraphQL APIs with NestJS.',
+      'Integrating TypeORM/Prisma with relational and non-relational databases for data persistence.',
+      'Applying dependency injection, pipes, guards, and interceptors to ensure clean architecture.',
+      'Writing unit and integration tests in NestJS to ensure reliability and maintainability.',
+      'Deploying NestJS services to cloud platforms (Heroku, AWS, etc.) with CI/CD pipelines.',
+    ],
+  },
   // {
   //   title: 'Full stack Developer',
   //   company_name: 'Meta',
@@ -182,6 +229,39 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: 'Next Movie Project',
+    description:
+      'A web application that allows users to view(from movie.db api) movies that are in cinemas or premieres. In this application, you can filter and sort movies, view detailed information about each movie.',
+    tags: [
+      {
+        name: 'next',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'redux',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: ' green-blue-text-gradient',
+      },
+      {
+        name: 'git',
+        color: 'pink-purple-text-gradient',
+      },
+    ],
+    image: nextExam,
+    source_code_link: 'https://next-exam-flame.vercel.app',
+  },
   {
     name: 'React Pizza App',
     description:

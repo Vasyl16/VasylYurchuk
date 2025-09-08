@@ -46,11 +46,18 @@ const About: React.FC = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn('', '', 0.1, 1)}
       >
-        I'm dedicated Web Developer specializing in React and TypeScript. I
-        focus on building responsive and maintainable web applications that
-        deliver seamless user experiences. With a strong background in modern
-        front-end technologies, I thrive on turning complex challenges into
-        intuitive solutions.
+        💻 Passionate Full-Stack Developer with hands-on experience building
+        modern web applications using React, Next.js, Node.js, and NestJS. I
+        enjoy turning complex problems into clean, scalable solutions and
+        continuously improving my skills in both frontend and backend
+        development.
+        <br /> 🚀 Experienced with: Frontend: React, Next.js, TypeScript,
+        TailwindCSS Backend: Node.js, NestJS, Express, PostgreSQL Other: REST
+        APIs, authentication, testing (Jest), deployment (Heroku, Vercel) <br />
+        🌱 Currently focusing on writing clean, testable code, exploring cloud
+        deployment, and improving full-stack architectures.
+        <br /> 🤝 Open to collaborating on exciting projects, especially those
+        that bring value to users and challenge me to grow as a developer.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => {
